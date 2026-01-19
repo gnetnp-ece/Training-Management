@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Confirmation Letter - GNDEC ECE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        
+        .icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .alert-box {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+            text-align: left;
+        }
+        
+        .alert-box h3 {
+            color: #0c5460;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .alert-box ul {
+            color: #0c5460;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        
+        .btn-primary {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 25px;
+            font-size: 0.95em;
+            color: #856404;
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .card {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            .btn-primary {
+                padding: 15px 35px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <div class="card">
+            <div class="icon">📤</div>
+            <h1>Upload Confirmation Letter</h1>
+            <p>Due to file upload security requirements, this form will open in a new tab. Your submission will be automatically processed and confirmed via email.</p>
+            
+            <div class="alert-box">
+                <h3>📋 Required Documents</h3>
+                <ul>
+                    <li>Training confirmation letter from company (PDF format)</li>
+                    <li>Maximum file size: 5 MB</li>
+                    <li>Letter must be on company letterhead</li>
+                    <li>Must include training dates and company seal</li>
+                </ul>
+            </div>
+            
+            <a href="https://forms.gle/atJNokfn31x1ZrK46" target="_blank" class="btn-primary">
+                Open Upload Form →
+            </a>
+            
+            <div class="note">
+                <strong>💡 Note:</strong> After uploading, you will receive an automatic confirmation email with your organized file link. Please check your email (including spam folder) within 5 minutes.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
