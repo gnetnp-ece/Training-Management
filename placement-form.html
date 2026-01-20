@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Record Submission - GNDEC ECE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 750px;
+            width: 100%;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: white;
+            color: #28a745;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        
+        .congratulations-badge {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .congratulations-badge h3 {
+            color: #333;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        
+        .icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .info-box {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+            text-align: left;
+        }
+        
+        .info-box h3 {
+            color: #0c5460;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .info-box ul {
+            color: #0c5460;
+            margin-left: 20px;
+            line-height: 1.9;
+        }
+        
+        .info-box ul li {
+            margin-bottom: 8px;
+        }
+        
+        .btn-primary {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(40, 167, 69, 0.6);
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+            text-align: left;
+        }
+        
+        .warning-box h4 {
+            color: #856404;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .warning-box p {
+            color: #856404;
+            font-size: 0.95em;
+            margin: 0;
+        }
+        
+        .note {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #004085;
+            border-left: 4px solid #007bff;
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .card {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            .btn-primary {
+                padding: 15px 35px;
+                font-size: 1.1em;
+            }
+            
+            .congratulations-badge h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <div class="card">
+            <div class="congratulations-badge">
+                <h3>🎉 Congratulations on Your Placement!</h3>
+            </div>
+            
+            <div class="icon">🎯</div>
+            <h1>Submit Placement Details</h1>
+            <p>We're proud of your achievement! Please submit your placement information to help us maintain accurate department records and statistics.</p>
+            
+            <div class="info-box">
+                <h3>📋 Information Required</h3>
+                <ul>
+                    <li><strong>Personal Details:</strong> Name, URN, Email, Contact Number</li>
+                    <li><strong>Company Information:</strong> Company name, job role/designation</li>
+                    <li><strong>Package Details:</strong> CTC (Annual), Stipend (if applicable)</li>
+                    <li><strong>Work Location:</strong> City/State where you'll be working</li>
+                    <li><strong>Joining Date:</strong> Expected date of joining</li>
+                    <li><strong>Offer Letter:</strong> Upload PDF copy (Max 1 MB)</li>
+                </ul>
+            </div>
+            
+            <div class="warning-box">
+                <h4>🔒 Confidentiality Note</h4>
+                <p>All information provided is strictly confidential and will be used only for departmental records and placement statistics. Your data will not be shared publicly without permission.</p>
+            </div>
+            
+            <a href="https://forms.gle/9JLfFnaFopmL7UPQ9" target="_blank" class="btn-primary">
+                Open Placement Form →
+            </a>
+            
+            <div class="note">
+                <strong>💡 Note:</strong> Due to file upload requirements, this form will open in a new tab. Please ensure your offer letter is in PDF format and under 1 MB in size before submitting.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
