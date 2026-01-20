@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GNDEC Training Portal - ECE Department</title>
+    <title>GNDEC Training & Placement Portal - ECE</title>
     <style>
         * {
             margin: 0;
@@ -19,7 +19,7 @@
         }
         
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         
@@ -41,9 +41,26 @@
             opacity: 0.95;
         }
         
+        .section-divider {
+            margin: 40px 0 30px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .section-divider h2 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .section-divider p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-bottom: 40px;
         }
@@ -97,6 +114,21 @@
         .btn:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        /* Special styling for placement card */
+        .card.placement-card {
+            border-top: 5px solid #28a745;
+            background: linear-gradient(to bottom, #f0fff4 0%, #ffffff 100%);
+        }
+        
+        .card.placement-card .btn {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .card.placement-card .btn:hover {
+            box-shadow: 0 8px 20px rgba(40, 167, 69, 0.6);
         }
         
         .info-section {
@@ -171,15 +203,25 @@
             .card {
                 padding: 30px;
             }
+            
+            .section-divider h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎓 GNDEC Training Portal</h1>
+            <h1>🎓 GNDEC T&P Portal</h1>
             <p>Training & Placement Cell - Department of ECE</p>
             <p style="font-size: 0.9em; margin-top: 10px;">Guru Nanak Dev Engineering College, Ludhiana</p>
+        </div>
+        
+        <!-- Training Section -->
+        <div class="section-divider">
+            <h2>📚 Training Management</h2>
+            <p>Submit and track your industrial training requests</p>
         </div>
         
         <div class="card-grid">
@@ -198,6 +240,22 @@
             </div>
         </div>
         
+        <!-- Placement Section -->
+        <div class="section-divider">
+            <h2>💼 Placement Records</h2>
+            <p>Report your placement details for departmental records</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card placement-card">
+                <div class="card-icon">🎯</div>
+                <h2>Submit Placement Data</h2>
+                <p>Congratulations on your placement! Please submit your offer letter and placement details to help us maintain accurate department records.</p>
+                <a href="placement-form.html" class="btn">Report Placement</a>
+            </div>
+        </div>
+        
+        <!-- Information Section -->
         <div class="info-section">
             <h3>📋 Training Process Overview</h3>
             <ul>
@@ -207,6 +265,15 @@
                 <li><strong>Step 4:</strong> Obtain confirmation letter from the company</li>
                 <li><strong>Step 5:</strong> Upload confirmation letter through the Upload Form</li>
                 <li><strong>Step 6:</strong> Receive confirmation email from T&P Cell</li>
+            </ul>
+            
+            <h3 style="margin-top: 30px;">💼 Placement Reporting</h3>
+            <ul>
+                <li>All placed students must submit their placement details immediately</li>
+                <li>Upload your offer letter (PDF format, max 1 MB)</li>
+                <li>Include accurate package information (CTC and stipend if applicable)</li>
+                <li>Provide joining date, location, and job role details</li>
+                <li>Information is strictly confidential and used for department statistics only</li>
             </ul>
             
             <h3 style="margin-top: 30px;">📧 Contact Information</h3>
