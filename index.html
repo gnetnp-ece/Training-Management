@@ -26,6 +26,491 @@
         .header {
             text-align: center;
             color: white;
+            margin-bottom: 30px;
+            animation: fadeInDown 0.8s ease;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+        
+        /* Countdown Timer Card */
+        .deadline-card {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
+            color: white;
+            text-align: center;
+            animation: fadeInUp 0.8s ease, pulse 2s infinite;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .deadline-card h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .deadline-card .icon {
+            font-size: 1.2em;
+            animation: ring 1s infinite;
+        }
+        
+        .deadline-card p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            min-width: 100px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .countdown-number {
+            font-size: 3em;
+            font-weight: bold;
+            display: block;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .countdown-label {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+        
+        .deadline-expired {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            animation: none;
+        }
+        
+        .warning-text {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 0.95em;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .section-divider {
+            margin: 40px 0 30px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .section-divider h2 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .section-divider p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        
+        .card h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            font-size: 1.05em;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        /* Special styling for placement card */
+        .card.placement-card {
+            border-top: 5px solid #28a745;
+            background: linear-gradient(to bottom, #f0fff4 0%, #ffffff 100%);
+        }
+        
+        .card.placement-card .btn {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .card.placement-card .btn:hover {
+            box-shadow: 0 8px 20px rgba(40, 167, 69, 0.6);
+        }
+        
+        .info-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .info-section h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+        
+        .info-section ul {
+            list-style-position: inside;
+            color: #666;
+            line-height: 2;
+            font-size: 1.05em;
+        }
+        
+        .info-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+        }
+        
+        @keyframes ring {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            10%, 30% {
+                transform: rotate(-10deg);
+            }
+            20%, 40% {
+                transform: rotate(10deg);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header p {
+                font-size: 1.1em;
+            }
+            
+            .deadline-card h2 {
+                font-size: 1.4em;
+            }
+            
+            .countdown-item {
+                min-width: 80px;
+                padding: 15px;
+            }
+            
+            .countdown-number {
+                font-size: 2em;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card {
+                padding: 30px;
+            }
+            
+            .section-divider h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 GNDEC T&P Portal</h1>
+            <p>Training & Placement Cell - Department of ECE</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Guru Nanak Dev Engineering College, Ludhiana</p>
+        </div>
+        
+        <!-- URGENT DEADLINE NOTICE WITH COUNTDOWN -->
+        <div class="deadline-card" id="deadlineCard">
+            <h2>
+                <span class="icon">⏰</span>
+                URGENT: Confirmation Letter Submission Deadline
+            </h2>
+            <p>All students must submit their training confirmation letters by <strong>31st January 2026</strong></p>
+            
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            
+            <div class="warning-text" id="warningText">
+                <strong>⚠️ Important:</strong> After 31st January 2026, a written application stating the reason for late submission will be mandatory.
+            </div>
+        </div>
+        
+        <!-- Training Section -->
+        <div class="section-divider">
+            <h2>📚 Training Management</h2>
+            <p>Submit and track your industrial training requests</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon">📝</div>
+                <h2>Request Training Letter</h2>
+                <p>Submit your training request to get an official permission letter from the department. Fill in your details and company information to proceed.</p>
+                <a href="request-form.html" class="btn">Submit Request</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">✅</div>
+                <h2>Submit Confirmation</h2>
+                <p>After receiving company approval, upload your training confirmation letter for department records and verification.</p>
+                <a href="confirmation-form.html" class="btn">Upload Confirmation</a>
+            </div>
+        </div>
+        
+        <!-- Placement Section -->
+        <div class="section-divider">
+            <h2>💼 Placement Records</h2>
+            <p>Report your placement details for departmental records</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card placement-card">
+                <div class="card-icon">🎯</div>
+                <h2>Submit Placement Data</h2>
+                <p>Congratulations on your placement! Please submit your offer letter and placement details to help us maintain accurate department records.</p>
+                <a href="placement-form.html" class="btn">Report Placement</a>
+            </div>
+        </div>
+        
+        <!-- Information Section -->
+        <div class="info-section">
+            <h3>📋 Training Process Overview</h3>
+            <ul>
+                <li><strong>Step 1:</strong> Submit training request through the Request Form</li>
+                <li><strong>Step 2:</strong> Receive request letter PDF via email (within 24 hours)</li>
+                <li><strong>Step 3:</strong> Present the letter to your training company/institute</li>
+                <li><strong>Step 4:</strong> Obtain confirmation letter from the company</li>
+                <li><strong>Step 5:</strong> Upload confirmation letter through the Upload Form</li>
+                <li><strong>Step 6:</strong> Receive confirmation email from T&P Cell</li>
+            </ul>
+            
+            <h3 style="margin-top: 30px;">💼 Placement Reporting</h3>
+            <ul>
+                <li>All placed students must submit their placement details immediately</li>
+                <li>Upload your offer letter (PDF format, max 1 MB)</li>
+                <li>Include accurate package information (CTC and stipend if applicable)</li>
+                <li>Provide joining date, location, and job role details</li>
+                <li>Information is strictly confidential and used for department statistics only</li>
+            </ul>
+            
+            <h3 style="margin-top: 30px;">📧 Contact Information</h3>
+            <ul>
+                <li><strong>Email:</strong> tpo@gndec.ac.in</li>
+                <li><strong>Phone:</strong> 0161-5064510</li>
+                <li><strong>Cell:</strong> +91-9872219178</li>
+                <li><strong>Website:</strong> <a href="https://www.tnpgndec.com/" target="_blank" style="color: #667eea;">www.tnpgndec.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Countdown Timer JavaScript -->
+    <script>
+        // Set the deadline date (January 31, 2026, 23:59:59)
+        const deadlineDate = new Date('2026-01-31T23:59:59').getTime();
+        
+        // Update the countdown every second
+        const countdownInterval = setInterval(function() {
+            
+            // Get current date and time
+            const now = new Date().getTime();
+            
+            // Calculate the time remaining
+            const timeRemaining = deadlineDate - now;
+            
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+            
+            // Display the countdown
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            
+            // If the countdown is finished
+            if (timeRemaining < 0) {
+                clearInterval(countdownInterval);
+                
+                // Update the card to show deadline expired
+                const deadlineCard = document.getElementById('deadlineCard');
+                deadlineCard.classList.add('deadline-expired');
+                
+                // Update the heading
+                deadlineCard.querySelector('h2').innerHTML = '<span class="icon">⏰</span> Deadline Expired';
+                
+                // Update the paragraph
+                deadlineCard.querySelector('p').innerHTML = 'The deadline for submitting confirmation letters has passed.';
+                
+                // Update countdown display
+                document.getElementById('countdown').innerHTML = '<div style="font-size: 2em; padding: 20px;">TIME\'S UP!</div>';
+                
+                // Update warning text
+                document.getElementById('warningText').innerHTML = '<strong>📝 Action Required:</strong> All late submissions now require a written application explaining the reason for delay. Please contact the T&P coordinator for further instructions.';
+            }
+            
+        }, 1000); // Update every second
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNDEC Training & Placement Portal - ECE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
             margin-bottom: 50px;
             animation: fadeInDown 0.8s ease;
         }
@@ -285,4 +770,4 @@
         </div>
     </div>
 </body>
-</html>
+</html> -->
